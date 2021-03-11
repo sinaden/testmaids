@@ -1,11 +1,3 @@
-
-
-
---- 
-published: true 
---- 
-
-
 This is an example of text in which has been added color, bold and italics text.  
 
 |Items|Descriptions|Data|
