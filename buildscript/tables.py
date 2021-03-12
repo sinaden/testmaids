@@ -16,14 +16,19 @@ def create_markdown(out_df, xmltitle ):
     dt_string = now.strftime("%Y-%m-%d-"+xmltitle+"-Subsets-and-Features")
     
     mdFile = MdUtils(file_name="../_posts/"+dt_string)
+
+
+
+    
+    mdFile.new_line("<style> th { padding: 7px;} </style>")
     mdFile.new_paragraph("Bellow the subsets and their corresponding features are presented.")
 
     for i in range(len(out_df.ID)):
-        print("hhh" + out_df.ID[i] + " " + out_df.Name[i] + " " + out_df.Name[i]
+        #print("hhh" + out_df.ID[i] + " " + out_df.Name[i] + " " + out_df.Name[i]
           + " " + out_df['Last Update'][i] + " " + out_df.Modality[i] + " " + out_df.Format[i] + " " + out_df.Size[i])
         
         list_of_strings = ["ID", "Name", "Last Update", "Modality","Format","Size", "Parent","Purpose","Link"]
-        print(list_of_strings)
+        #print(list_of_strings)
         mdFile.new_line("Subset " +str(i + 1), bold_italics_code='b', align='left')
         mdFile.new_line()
         
@@ -31,7 +36,7 @@ def create_markdown(out_df, xmltitle ):
         list_of_strings.extend([xstr(out_df.ID[i]), xstr(out_df.Name[i]), xstr(out_df['Last Update'][i]),
                                 xstr( out_df.Modality[i]) , xstr(out_df.Format[i]), xstr(out_df.Size[i]),
                                 xstr(out_df.Parent[i]), xstr(out_df.Purpose[i]), xstr(out_df.Link[i])])
-        print(list_of_strings)
+        #print(list_of_strings)
         mdFile.new_line()
         mdFile.new_table(columns=9, rows=2, text=list_of_strings)
 
@@ -49,7 +54,7 @@ def create_markdown(out_df, xmltitle ):
         numberof_features = len(out_df.Features[i])
         for k in range(numberof_features):
 
-            print(features_list_of_strings)   
+            #print(features_list_of_strings)   
             tdic = out_df.Features[i][k] 
             
             for key, v in tdic.items():
@@ -93,7 +98,7 @@ def create_markdown(out_df, xmltitle ):
                                tdic.get("f_encoding", "")])
             
     
-        print(features_list_of_strings)   
+        #print(features_list_of_strings)   
         mdFile.new_line()
         mdFile.new_table(columns=18, rows=numberof_features+1, text=features_list_of_strings)
         mdFile.new_line()
