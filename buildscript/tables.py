@@ -17,10 +17,8 @@ def create_markdown(out_df, xmltitle ):
         print("hhh" + out_df.ID[i] + " " + out_df.Name[i] + " " + out_df.Name[i]
           + " " + out_df['Last Update'][i] + " " + out_df.Modality[i] + " " + out_df.Format[i] + " " + out_df.Size[i])
         
-        list_of_strings = ["ID", "Name", "Last Update",
-                           "Modality","Format","Size",
-                           "Parent","Purpose","Link"]
-        #print(list_of_strings)
+        list_of_strings = ["ID", "Name", "Last Update", "Modality","Format","Size", "Parent","Purpose","Link"]
+        print(list_of_strings)
         mdFile.new_line("Subset " +str(i + 1), bold_italics_code='b', align='left')
         mdFile.new_line()
         
@@ -28,15 +26,14 @@ def create_markdown(out_df, xmltitle ):
         list_of_strings.extend([out_df.ID[i], out_df.Name[i], out_df['Last Update'][i],
                                  out_df.Modality[i] , out_df.Format[i], out_df.Size[i],
                                 out_df.Parent[i], out_df.Purpose[i], out_df.Link[i]])
-        #print(list_of_strings)
+        print(list_of_strings)
         mdFile.new_line()
         mdFile.new_table(columns=9, rows=2, text=list_of_strings)
 
         mdFile.new_line()
         mdFile.new_line("Features of Subset " +str(i + 1), bold_italics_code='i', align='left')
 
-        features_list_of_strings = ["Name","ID", "Date of Intro","Values","Meaning of Nan","Meaning of Zero","Meaning of blankvoid",
-                           "Sparsity","Mean","std","Modality","Median","IQR","Parents","Unit","Definition","Purpose","Encoding"]
+        features_list_of_strings = ["Name","ID", "Date of Intro","Values","Meaning of Nan","Meaning of Zero","Meaning of blankvoid", "Sparsity","Mean","std","Modality","Median","IQR","Parents","Unit","Definition","Purpose","Encoding"]
         
         
         #{"f_name": f_name, "f_id": f_id, "f_date_of_introduction" : f_date, "f_values": f_val, 
@@ -47,6 +44,7 @@ def create_markdown(out_df, xmltitle ):
         numberof_features = len(out_df.Features[i])
         for k in range(numberof_features):
 
+            print(features_list_of_strings)   
             tdic = out_df.Features[i][k] 
             
             for key, v in tdic.items():
@@ -90,7 +88,7 @@ def create_markdown(out_df, xmltitle ):
                                tdic.get("f_encoding", "")])
             
     
-        #print(features_list_of_strings)   
+        print(features_list_of_strings)   
         mdFile.new_line()
         mdFile.new_table(columns=18, rows=numberof_features+1, text=features_list_of_strings)
         mdFile.new_line()
