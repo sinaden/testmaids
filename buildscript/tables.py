@@ -42,8 +42,9 @@ def create_markdown(out_df, xmltitle ):
 
         mdFile.new_line()
 
-        features_list_of_strings = ["Name","ID", "Date of Intro","Values","Meaning of Nan","Meaning of Zero","Meaning of blankvoid", "Sparsity","Mean","std","Modality","Median","IQR","Parents","Unit","Definition","Purpose","Encoding"]
-        
+        #features_list_of_strings = ["Name","ID", "Date of Intro","Values","Meaning of Nan","Meaning of Zero","Meaning of blankvoid", "Sparsity","Mean","std","Modality","Median","IQR","Parents","Unit","Definition","Purpose","Encoding"]
+        features_list_of_strings = ["Name","ID", "Date of Intro","Values","Meaning of Nan","Meaning of Zero","Meaning of blankvoid","Parents","Unit","Definition","Purpose","Encoding"]
+
         
         #{"f_name": f_name, "f_id": f_id, "f_date_of_introduction" : f_date, "f_values": f_val, 
          #              "f_mean_nan": f_nan, "f_mean_zero": f_zero, "f_mean_blankvoid": f_bl, "f_sparsity": f_spa, "f_mean": f_mean,
@@ -75,17 +76,17 @@ def create_markdown(out_df, xmltitle ):
                                     
                                     tdic.get("f_mean_blankvoid", ""), 
                                     
-                                        tdic.get("f_sparsity", ""), 
+                               #         tdic.get("f_sparsity", ""), 
                                     
-                               tdic.get("f_mean",  ""), 
+                              # tdic.get("f_mean",  ""), 
                                     
-                                    tdic.get("f_std", ""), 
+                               #     tdic.get("f_std", ""), 
                                     
-                                        tdic.get("f_modality",  ""), 
+                                #        tdic.get("f_modality",  ""), 
                                     
-                               tdic.get("f_median",  ""), 
+                              # tdic.get("f_median",  ""), 
                                     
-                                    tdic.get("f_iqr", ""), 
+                               #     tdic.get("f_iqr", ""), 
                                     
                                         tdic.get("f_parents", ""), 
                                     
@@ -103,7 +104,7 @@ def create_markdown(out_df, xmltitle ):
         if numberof_features != 0:
             mdFile.new_line("Features of Subset " +str(i + 1), bold_italics_code='i', align='left')
             mdFile.new_line()
-            mdFile.new_table(columns=18, rows=numberof_features+1, text=features_list_of_strings)
+            mdFile.new_table(columns=12, rows=numberof_features+1, text=features_list_of_strings)
             mdFile.new_line()
     mdFile.create_md_file()
 
