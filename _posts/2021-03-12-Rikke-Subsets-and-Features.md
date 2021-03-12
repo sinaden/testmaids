@@ -14,7 +14,8 @@ Bellow the subsets and their corresponding features are presented.
   
   
   
-*Features of Subset 1*
+*Features of Subset 1*  
+
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|1|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -41,7 +42,8 @@ Bellow the subsets and their corresponding features are presented.
   
   
   
-*Features of Subset 2*
+*Features of Subset 2*  
+
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|14|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -59,7 +61,8 @@ Bellow the subsets and their corresponding features are presented.
   
   
   
-*Features of Subset 3*
+*Features of Subset 3*  
+
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|18|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -82,7 +85,8 @@ Bellow the subsets and their corresponding features are presented.
   
   
   
-*Features of Subset 4*
+*Features of Subset 4*  
+
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|27|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -100,7 +104,8 @@ Bellow the subsets and their corresponding features are presented.
   
   
   
-*Features of Subset 5*
+*Features of Subset 5*  
+
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|31|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -137,7 +142,8 @@ Bellow the subsets and their corresponding features are presented.
   
   
   
-*Features of Subset 6*
+*Features of Subset 6*  
+
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|54|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
