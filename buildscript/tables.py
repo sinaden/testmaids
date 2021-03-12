@@ -41,7 +41,6 @@ def create_markdown(out_df, xmltitle ):
         mdFile.new_table(columns=9, rows=2, text=list_of_strings)
 
         mdFile.new_line()
-        mdFile.new_line("Features of Subset " +str(i + 1), bold_italics_code='i', align='left')
 
         features_list_of_strings = ["Name","ID", "Date of Intro","Values","Meaning of Nan","Meaning of Zero","Meaning of blankvoid", "Sparsity","Mean","std","Modality","Median","IQR","Parents","Unit","Definition","Purpose","Encoding"]
         
@@ -52,6 +51,7 @@ def create_markdown(out_df, xmltitle ):
            #            "f_unit": f_un, "f_definition": f_def, "f_purpose": f_pu, "f_encoding": f_en})
             
         numberof_features = len(out_df.Features[i])
+
         for k in range(numberof_features):
 
             #print(features_list_of_strings)   
@@ -100,9 +100,10 @@ def create_markdown(out_df, xmltitle ):
     
         #print(features_list_of_strings)   
         mdFile.new_line()
-        mdFile.new_table(columns=18, rows=numberof_features+1, text=features_list_of_strings)
-        mdFile.new_line()
-        
+        if numberof_features != 0:
+            mdFile.new_line("Features of Subset " +str(i + 1), bold_italics_code='i', align='left')
+            mdFile.new_table(columns=18, rows=numberof_features+1, text=features_list_of_strings)
+            mdFile.new_line()
     mdFile.create_md_file()
 
 
