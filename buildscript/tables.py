@@ -25,7 +25,7 @@ def create_markdown(out_df, xmltitle ):
 
     for i in range(len(out_df.ID)):
         #print("hhh" + out_df.ID[i] + " " + out_df.Name[i] + " " + out_df.Name[i]
-          + " " + out_df['Last Update'][i] + " " + out_df.Modality[i] + " " + out_df.Format[i] + " " + out_df.Size[i])
+       #   + " " + out_df['Last Update'][i] + " " + out_df.Modality[i] + " " + out_df.Format[i] + " " + out_df.Size[i])
         
         list_of_strings = ["ID", "Name", "Last Update", "Modality","Format","Size", "Parent","Purpose","Link"]
         #print(list_of_strings)
