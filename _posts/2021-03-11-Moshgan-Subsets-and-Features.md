@@ -1,4 +1,8 @@
-
+<style>
+th{
+    padding: 7px;
+}
+</style>
 
 
 
