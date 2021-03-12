@@ -6,6 +6,11 @@ import pandas as pd
 from mdutils.mdutils import MdUtils
 from datetime import datetime
 
+def xstr(s):
+    if s is None:
+        return ''
+    return str(s)
+
 def create_markdown(out_df, xmltitle ):
     now = datetime.now()
     dt_string = now.strftime("%Y-%m-%d-"+xmltitle+"-Subsets-and-Features")
@@ -23,9 +28,9 @@ def create_markdown(out_df, xmltitle ):
         mdFile.new_line()
         
         
-        list_of_strings.extend([out_df.ID[i], out_df.Name[i], out_df['Last Update'][i],
-                                 out_df.Modality[i] , out_df.Format[i], out_df.Size[i],
-                                out_df.Parent[i], out_df.Purpose[i], out_df.Link[i]])
+        list_of_strings.extend([xstr(out_df.ID[i]), xstr(out_df.Name[i]), xstr(out_df['Last Update'][i]),
+                                xstr( out_df.Modality[i]) , xstr(out_df.Format[i]), xstr(out_df.Size[i]),
+                                xstr(out_df.Parent[i]), xstr(out_df.Purpose[i]), xstr(out_df.Link[i])])
         print(list_of_strings)
         mdFile.new_line()
         mdFile.new_table(columns=9, rows=2, text=list_of_strings)
