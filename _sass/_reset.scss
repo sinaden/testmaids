@@ -47,12 +47,9 @@ table {
 
 table, td, th{
    border: 1px solid #ddd;
-   padding: 7px;
-}
 
-thead th {
-	padding-left: 7px;
 }
+ 
 
 td {
   padding:7px;
@@ -62,6 +59,7 @@ th {
   font-weight:normal;
   background-color: #f2f3ff;
   border:1px;
+  border-spacing:0 10px;
 }
 
 tr:nth-child(even) {
