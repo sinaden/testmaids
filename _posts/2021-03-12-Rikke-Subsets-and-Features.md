@@ -2,7 +2,7 @@
 
 
   
-<style> th { padding: 7px;} </style>
+<style> th { padding: 7px;} .markdown-body { max-width:1400px} </style>
 
 Bellow the subsets and their corresponding features are presented.  
 **Subset 1**  
