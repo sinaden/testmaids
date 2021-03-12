@@ -47,17 +47,17 @@ table {
 
 table, td, th{
    border: 1px solid #ddd;
-
+   padding: 7px;
 }
 
 td {
   padding:7px;
 }
+
 th {
   font-weight:normal;
   background-color: #f2f3ff;
   border:1px;
-  padding:7px;
 }
 
 tr:nth-child(even) {
