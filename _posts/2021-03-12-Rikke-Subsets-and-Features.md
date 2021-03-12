@@ -13,8 +13,8 @@ Bellow the subsets and their corresponding features are presented.
 |1|ptdata92|28/1 2020|TABULAR|sav|538|0|NOPHO ALL-92, patient cohort with background information. Follow-up until 20.04.04||
   
   
-*Features of Subset 1*  
-
+  
+*Features of Subset 1*
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|1|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -40,8 +40,8 @@ Bellow the subsets and their corresponding features are presented.
 |2|prdata92|28/1 2021|TABULAR|sav|9209|0|NOPHO ALL-92, blood samples, one row per sample per patient to determine EMTX and E6TGN levels ||
   
   
-*Features of Subset 2*  
-
+  
+*Features of Subset 2*
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|14|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -58,8 +58,8 @@ Bellow the subsets and their corresponding features are presented.
 |3|meddata92|28/1 2022|TABULAR|sav|28582|0|NOPHO ALL-92, one line per patient reporting medicine, medicine dose or blood sample to determine leukocyte count||
   
   
-*Features of Subset 3*  
-
+  
+*Features of Subset 3*
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|18|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -81,8 +81,8 @@ Bellow the subsets and their corresponding features are presented.
 |4|snitdata92|28/1 2023|TABULAR|sav|538|0|NOPHO ALL-92, Contains a line for each patient with various averages and patient-specific information. The majority of the averages are taken from the course file and how they are determined therefore appears from the description of the course file.||
   
   
-*Features of Subset 4*  
-
+  
+*Features of Subset 4*
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|27|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -99,8 +99,8 @@ Bellow the subsets and their corresponding features are presented.
 |5|ptdata08|28/1 2024|TABULAR|sav|3162|0|NOPHO ALL-2008, patient cohort with background information.||
   
   
-*Features of Subset 5*  
-
+  
+*Features of Subset 5*
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|31|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -136,8 +136,8 @@ Bellow the subsets and their corresponding features are presented.
 |6|prdata08|28/1 2025|TABULAR|xlxs|43896|0|NOPHO ALL-08, blood samples, one row per sample per patient to determine metabolite levels incl. Methylated metabolites ||
   
   
-*Features of Subset 6*  
-
+  
+*Features of Subset 6*
 |Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |PTNR|54|1/28/2020|Unique patient identifier character|Not possible in format.|None recorded |None recorded ||||||||None|Unique patient identifier character|Unique patient identifier character||
@@ -162,9 +162,4 @@ Bellow the subsets and their corresponding features are presented.
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |7|genotype data08|28/1 2026|files|binary plink|3|0|NOPHO ALL-2008. Genome-wide SNP profiling. 2146021 variants and 1829 people pass filters and QC.||
   
-  
-*Features of Subset 7*  
-
-|Name|ID|Date of Intro|Values|Meaning of Nan|Meaning of Zero|Meaning of blankvoid|Sparsity|Mean|std|Modality|Median|IQR|Parents|Unit|Definition|Purpose|Encoding|
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
   
