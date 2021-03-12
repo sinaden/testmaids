@@ -1,7 +1,8 @@
 
 
 
-
+  
+<style> th { padding: 7px;} </style>
 
 Bellow the subsets and their corresponding features are presented.  
 **Subset 1**  
