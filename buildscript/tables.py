@@ -20,7 +20,7 @@ def create_markdown(out_df, xmltitle ):
 
 
     
-    mdFile.new_line("<style> th { padding: 7px;} </style>")
+    mdFile.new_line("<style> th { padding: 7px;} .markdown-body { max-width:1400px} </style>")
     mdFile.new_paragraph("Bellow the subsets and their corresponding features are presented.")
 
     for i in range(len(out_df.ID)):
