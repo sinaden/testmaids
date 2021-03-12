@@ -55,11 +55,16 @@ td {
   padding:7px;
 }
 
+
 th {
   font-weight:normal;
   background-color: #f2f3ff;
   border:1px;
-  border-spacing:0 10px;
+}
+
+
+th{
+	padding:7px;
 }
 
 tr:nth-child(even) {
