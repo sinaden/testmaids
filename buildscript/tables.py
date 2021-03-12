@@ -16,9 +16,6 @@ def create_markdown(out_df, xmltitle ):
     dt_string = now.strftime("%Y-%m-%d-"+xmltitle+"-Subsets-and-Features")
     
     mdFile = MdUtils(file_name="../_posts/"+dt_string)
-
-
-
     
     mdFile.new_line("<style> th { padding: 7px;} .markdown-body { max-width:1400px} </style>")
     mdFile.new_paragraph("Bellow the subsets and their corresponding features are presented.")
