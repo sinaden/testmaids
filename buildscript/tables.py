@@ -182,7 +182,7 @@ for subset in sfd:
         f_def = feature.find("A16").text
         f_pu = feature.find("A17").text
         f_en = feature.find("A18").text
-        print("\t" + f_id + " " + f_name)
+        print("\t" + xstr(f_id) + " " + xstr(f_name))
         
         f_rows.append({"f_name": f_name, "f_id": f_id, "f_date_of_introduction" : f_date, "f_values": f_val, 
                        "f_mean_nan": f_nan, "f_mean_zero": f_zero, "f_mean_blankvoid": f_bl, "f_sparsity": f_spa, "f_mean": f_mean,
